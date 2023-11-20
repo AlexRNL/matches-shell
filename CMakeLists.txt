@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(MatchesShell C)
+project(matches-shell C)
 
 set(CMAKE_C_STANDARD 11)
 

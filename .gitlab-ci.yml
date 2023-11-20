@@ -11,7 +11,7 @@ build:
     - cmake .. && cmake --build . && make
   artifacts:
     paths:
-      - ci-build/MatchesShell
+      - ci-build/matches-shell
   cache:
     paths:
       - "*.o"
@@ -20,4 +20,4 @@ build:
 test:
   stage: test
   script:
-    - test -x "ci-build/MatchesShell"
+    - test -x "ci-build/matches-shell"
