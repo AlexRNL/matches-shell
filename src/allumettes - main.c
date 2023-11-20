@@ -2,35 +2,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 
 //       DEFINE
 
-#define NB_ALLUMETTES 0 //0 pour un nombre d'alumettes aléatoires.
+#define NB_ALLUMETTES 0 //0 pour un nombre d'alumettes alï¿½atoires.
 
 //       BIBLIOTHEQUES PERSONNELLES
 
 #include "allumettes - affichage.h"
 #include "allumettes - jeu.h"
 
-/*Jeu des alumettes : un nombre (aléatoire ou pas) d'alumettes est disponible, le joueur peut prendre
-entre 1 et 3 alumettes par tours. Celui qui prend la dernière perd !!*/
+/*Jeu des alumettes : un nombre (alï¿½atoire ou pas) d'alumettes est disponible, le joueur peut prendre
+entre 1 et 3 alumettes par tours. Celui qui prend la derniï¿½re perd !!*/
 
-int main()
+int main(void)
 {
     //      DECLARATION DES CONSTANTES
-    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; //é, è, ê et à.
+    const char e = '\x82', ee = '\x8A', a = '\x85' ; //ï¿½, ï¿½ et ï¿½.
 
     //      DECLARATION DES VARIABLES
     int nb_joueurs, nb_Allumettes, nb_tours, nb_Allumettes_a_enlever, difficulte ;
 
 
     //      DEBUT DU JEU
-    srand(time(NULL)) ;
-    if (NB_ALLUMETTES < 0 || NB_ALLUMETTES > 27)
-    {
-                      printf("") ;
-                      system("PAUSE") ;
-    }
+    srand((unsigned int) time(NULL)) ;
     do
     {
         system("CLS") ;
@@ -52,7 +49,7 @@ int main()
                    } while (difficulte < 0 || difficulte > 3) ;
     }
     if (NB_ALLUMETTES) {nb_Allumettes = NB_ALLUMETTES ;}
-    else {nb_Allumettes = rand()%(11) + 16 ;} //Nombre d'allumette aléatoire entre 15 et 40.
+    else {nb_Allumettes = rand()%(11) + 16 ;} //Nombre d'allumette alï¿½atoire entre 15 et 40.
     nb_tours = 0 ;
     while (nb_Allumettes != 1)
     {

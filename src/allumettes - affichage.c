@@ -5,19 +5,19 @@
 
 //       DEFINE
 
-#define NB_ALLUMETTES 0 //0 pour un nombre d'alumettes aléatoires.
+#define NB_ALLUMETTES 0 //0 pour un nombre d'alumettes alï¿½atoires.
 
 //       BIBLIOTHEQUES PERSONNELLES
 
 #include "allumettes - affichage.h"
 #include "allumettes - jeu.h"
 
-/*Contient le fonctions qui gèrent l'affichage*/
+/*Contient le fonctions qui gï¿½rent l'affichage*/
 
-//Fonction qui gère l'affichage du jeu en cours :
+//Fonction qui gï¿½re l'affichage du jeu en cours :
 void afficher_jeu (int nb_Allumettes, int nb_joueurs, int nb_tours)
 {
-    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; //é, è, ê et à.
+    const char ee = '\x8A' ; //ï¿½.
     int i, j = 0 ;
     system("CLS") ;
     printf("\t\t\t\tALLUMETTES\n\n\n") ;
@@ -42,7 +42,7 @@ void afficher_jeu (int nb_Allumettes, int nb_joueurs, int nb_tours)
 
 void afficher_fin (int tours, int joueurs)
 {
-    const char e = '\x82', ee = '\x8A', eee = '\x88', a = '\x85' ; //é, è, ê et à.
+    const char e = '\x82', ee = '\x8A' ; //ï¿½ et ï¿½.
     int i = 0 ;
     system("CLS") ;
     printf("\t\t\t\tALLUMETTES\n\n\n") ;
